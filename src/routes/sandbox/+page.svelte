@@ -32,7 +32,7 @@
         font-family: Helvetica, sans-serif;
     }
     .trap{
-        border-bottom: 100vh solid #F2FDFF;
+        border-bottom: 99vh solid #F2FDFF;
         border-right: 35vw solid transparent;
     }
 </style>
