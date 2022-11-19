@@ -1,4 +1,5 @@
 <script>
+    import { goto } from "$app/navigation";
     let menu =`text-black text-opacity-60 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
 </script>
 
@@ -44,10 +45,10 @@
     </div>
     <div class="menu pt-3">
         <ul class="flex w-4/5 md:w-4/5 lg:w-4/6 xl:w-4/6 xl:px-10 mx-auto justify-between">
-            <li class={menu}>Home</li>
-            <li class={menu}>About</li>
-            <li class={menu}>Contact</li>
-            <li class={menu}>Projects</li>
+            <li on:click = {()=> goto('/')} on:keydown = {()=> goto('/')} class={menu}>Home</li>
+            <li on:click = {()=> goto('/page/about')} on:keydown = {()=> goto('/page/about')} class={menu}>About</li>
+            <li on:click = {()=> goto('/page/contact')} on:keydown = {()=> goto('/page/contact')} class={menu}>Contact</li>
+            <li on:click = {()=> goto('/page/projects')} on:keydown = {()=> goto('/page/projects')} class={menu}>Projects</li>
         </ul>
     </div>
     
