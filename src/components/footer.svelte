@@ -1,4 +1,5 @@
-<div class="bg-[#F7DEC8] text-black tracking-wide text-opacity-60 font-bold h-fit w-full py-4">
+<div class=" sm:hidden bg-[#F7DEC8] h-1 w-full"></div>
+<div class=" bg-black sm:bg-[#F7DEC8] text-gray-50 sm:text-black tracking-wide text-opacity-60 font-bold h-fit w-full py-4">
     <div class="w-5/6 mx-auto h-full flex flex-col space-y-3">
         <div class="">content</div>
         <div class="lorem grid grid-cols-3 gap-3 text-xs leading-5">
