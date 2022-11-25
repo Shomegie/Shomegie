@@ -5,7 +5,7 @@
     let menu =`text-black text-opacity-70 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
 </script>
 
-<div  class=" min-h-screen bg-[#F2FDFF] w-full flex flex-col helv pb-16">
+<div  class=" min-h-screen bg-[#ffffff] w-full flex flex-col helv pb-16">
     <div class="mobile block sm:hidden pb-6 ">
         <div class="z-10 h-1/4 w-full px-8 pt-8">
             <div class="menu flex justify-end">
@@ -26,6 +26,7 @@
             <div class="helv text-sm pl-1 text-black text-opacity-80 lg:tracking-wider lg:text-base">Fullstack developer, frontend designer, UI/UX designer, Svelte/Sveltekit developer, Tailwind developer</div>
         </div>
     </div>
+    <div class="h-1 w-full bg-[#fffaf0]"></div>
     <div class="menu pt-3 hidden sm:block">
         <ul class="flex w-4/5 md:w-4/5 lg:w-4/6 xl:w-4/6 xl:px-10 mx-auto justify-between">
             <li on:click = {()=> goto('/')} on:keydown = {()=> goto('/')} class={menu}>Home</li>
@@ -57,6 +58,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox=
 
     .pattern2{
         background-color: #f2fdff;
+        background-color: #fed8b7;
 background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%23f7dec8' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
     }
  </style>

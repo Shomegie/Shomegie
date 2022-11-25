@@ -36,7 +36,7 @@
 
 <!-- desktop view -->
 
-<div hidden class="h-[100vh] bg-[#F7DEC8] w-full sm:flex flex-col helv">
+<div hidden class="h-[100vh] bg-[#fed8b7] w-full sm:flex flex-col helv">
     <div class="h-[240px] bg-[#F2FDFF] w-full flex items-center justify-center">
         <div class=" w-fit flex flex-col">
             <div class="helv text-6xl lg:text-7xl tracking-tight text-black text-opacity-80 ">Shomegie Ikerodah</div>
