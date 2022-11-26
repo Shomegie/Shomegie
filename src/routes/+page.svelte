@@ -52,17 +52,21 @@
         </ul>
     </div>
     
-    <div class="content h-fit w-full">
-        <div class="flex flex-col w-fit mx-auto text-5xl xl:text-6xl text-black text-opacity-60 pt-10 space-y-3">
-            <div class="border-b border-black w-fit pr-6 border-opacity-10">Hello, my name is</div>
-            <div class="border-b border-black w-fit pr-6 border-opacity-10"><span class="text-black text-opacity-80 font-semibold tracking-tight ">Shomegie Ikerodah </span>& I'm a</div>
-            <div class="border-b border-black w-fit pr-1 border-opacity-10">fullstack web developer.</div>
+    <div class="flex items-center h-[55vh]">
+        <div class="content h-fit w-full">
+            <div class="flex flex-col w-fit mx-auto text-5xl xl:text-6xl text-black text-opacity-60 space-y-3">
+                <div class="border-b border-black w-fit pr-6 border-opacity-10">Hello, my name is</div>
+                <div class="border-b border-black w-fit pr-6 border-opacity-10"><span class="text-black text-opacity-80 font-semibold tracking-tight ">Shomegie Ikerodah </span>& I'm a</div>
+                <div class="border-b border-black w-fit pr-1 border-opacity-10">fullstack web developer.</div>
+            </div>
+            <div class="pt-10">
+                <div class="w-fit bg-black text-white mx-auto rounded-full py-3 px-5 text-sm cursor-pointer hover:bg-blue-700 hover:text-white transition duration-200">Download Resume</div>
+            </div>
         </div>
     </div>
 
-    <div class="pt-10">
-        <div class="w-fit bg-black text-white mx-auto rounded-full py-3 px-5 text-sm cursor-pointer hover:bg-blue-700 hover:text-white transition duration-200">Download Resume</div>
-    </div>
+
+
 
 </div>
 
