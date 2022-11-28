@@ -4,20 +4,29 @@
 
 <div class=" bg-red-500">
     <div class="flex flex-col">
-        <div class="">Software Developer</div>
-        <div class="">Hi, I'm a software developer specializing in building digital intepretations of websites, games and applications. I have a diverse computer-science background but currently i'm focused on a node, express, svelte/sveltekit, mongo & tailwind stack enviroment for development. 
-            As a subset of these interests, I can be described as 1. A svelte/sveltekit developer & 2. A tailwind front-end developer 3. A fullstack MESN developer. MESN = (Mongo, Express, Svelte & Node).</div>
-        
-        <div class="">Education
-            <br>
-            Computer Science graduate
+        <div class="bg-white">
+            <div class="w-4/6 flex flex-col space-y-4 mx-auto">
+                <div class="">Software Developer</div>
+                <div class="flex w-full">
+                    <div class="w-3/4">Hi, I'm a software developer specializing in building digital intepretations of websites, games and applications. I have a diverse computer-science background but currently i'm focused on a node, express, svelte/sveltekit, mongo & tailwind stack enviroment for development. 
+                        As a subset of these interests, I can be described as 1. A svelte/sveltekit developer & 2. A tailwind front-end developer 3. A fullstack MESN developer. MESN = (Mongo, Express, Svelte & Node).</div>
+                    <div class="w-1/4 h-72 bg-stone-300">test</div>
+                </div>
+
+                <div class="">Education
+                    <br>
+                    Computer Science  - Lancaster University
+                </div>
+            </div>
         </div>
+
+
         
         <div class="Skills bg-white ">
-            Skills:
 
-            <div class="bg-green-00">
-                <div class="grid grid-cols-6 gap-y-4 w-4/6 mx-auto">
+            <div class="bg-red-500 w-4/6 mx-auto">
+                <div class="">Skills & tools I use in web development:</div>
+                <div class="grid grid-cols-6 gap-y-4 m-auto">
                     <TechTile text="HTML5" icon="icomoon-free:html-five" />
                     <TechTile text="CSS3" icon="ion:logo-css3" />
                     <TechTile text="Javascript" icon="teenyicons:javascript-outline" />
@@ -33,30 +42,8 @@
                     <TechTile text="Git" icon="mdi:git" />
                     <TechTile text="Github" icon="icon-park:github" />
                     <!-- <TechTile text="Tailwind" icon="vscode-icons:file-type-tailwind" /> -->
-
-
                 </div>
             </div>
-
-
-            <ul>
-                <li>HTML</li>
-                <li>Css</li>
-                <li>Javascript</li>
-                <li>Typescript</li>
-                <li>Svelte</li>
-                <li>Sveltekit</li>
-                <li>Tailwind</li>
-            </ul>
-
-            <ul>
-                <li>Node</li>
-                <li>Express</li>
-                <li>jQuery</li>
-                <li>MongoDB</li>
-                <li>Git</li>
-                <li>Github</li>
-            </ul>
         </div>
         <div class="Tools">
             programming Tools
