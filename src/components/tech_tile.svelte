@@ -6,7 +6,7 @@
 
 </script>
 
-<div class=" rounded-lg w-fit h-fit p-0">
+<div class=" rounded-lg w-fit h-fit p-0 place-content-center">
     <div class="img">
         <Icon icon={icon} height="40" width="80" />
     </div>
