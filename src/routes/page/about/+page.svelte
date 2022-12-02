@@ -18,7 +18,7 @@
                         As a subset of these interests, I can also be described as: 
                     </div>
                     <div class= "w-full text-md font-sans text-stone-700 pt-3">
-                        <ul class="w-5/6 pl-4 mx-auto font-bold">
+                        <ul class="w-full text-blue-900 sm:text-stone-700 sm:w-5/6 pl-4 mx-auto font-bold">
                             <li>1. A svelte/sveltekit developer. (Frontend Developer)</li>
                             <li>2. A tailwind front-end developer. (Frontend Developer)</li>
                             <li>3. A MESN developer (Mongo, Express, Svelte & Node). (Fullstack Developer) </li>
@@ -35,8 +35,8 @@
         <div class="w-5/6 border-b border-stone-100 mx-auto py-4 divider"></div>
         <div class="Skills bg-white pt-6 ">
             <div class="w-4/6 mx-auto">
-                <div class="w-fit mx-auto bg-stone-600 text-white text-lg font-thin px-3 py-0 rounded">Skills & Technologies I use in web development</div>
-                <div class="grid grid-cols-6 gap-y-4 m-auto pt-10">
+                <div class="w-fit mx-auto bg-stone-600 text-white text-base text-center sm:text-lg font-thin px-3 py-0 rounded drop-shadow-lg">Skills & Technologies used in web development</div>
+                <div class="w-full lg:w-5/6 mx-auto flex flex-wrap place-content-center space-x-3 pt-10">
                     <TechTile text="HTML5" icon="icomoon-free:html-five" />
                     <TechTile text="CSS3" icon="ion:logo-css3" />
                     <TechTile text="Javascript" icon="teenyicons:javascript-outline" />
@@ -53,10 +53,10 @@
                 </div>
             </div>
         </div>
-        <div class="w-4/6 border-b border-stone-100 mx-auto py-4 divider"></div>
+        <div class="w-4/6 border-b border-stone-100 mx-auto py-4 lg:pt-0 divider"></div>
         <div class="Tools pt-6">
             <div class="w-4/6 mx-auto">
-                <div class="w-fit mx-auto text-white  bg-stone-600 text-lg font-thin px-3 rounded">Tools I use in web development</div>
+                <div class="w-fit mx-auto text-white  bg-stone-600 text-base sm:text-lg  font-thin px-3 text-center rounded drop-shadow-lg">Tools used in web development</div>
                     <div class="tools flex space-x- pt-8 justify-between">
                         <ToolTile text="Vs Code" icon="vscode-icons:file-type-vscode"/>
                         <ToolTile text="Mac Terminal" icon="ion:terminal"/>
@@ -75,7 +75,7 @@
         <div class="w-4/6 border-b border-stone-100 mx-auto py-4 divider"></div>
         <div class="Tools pt-6">
             <div class="w-4/6 mx-auto">
-                <div class="w-fit mx-auto text-white  bg-stone-600 text-lg font-thin px-3 rounded">Tools I use in design</div>
+                <div class="w-fit mx-auto text-white  bg-stone-600 text-md sm:text-lg font-thin px-3 rounded drop-shadow-lg">Tools used in design</div>
                     <div class="tools flex pt-6 space-x-3 justify-center">
                         <ToolTile text="Sketch UI" icon="vscode-icons:file-type-sketch"/>
                         <ToolTile text="Figma" icon="logos:figma"/>
@@ -89,8 +89,8 @@
         <div class="w-4/6 border-b border-stone-100 mx-auto py-4 divider"></div>
         <div class="others pt-6">
             <div class="w-4/6 mx-auto">
-                <div class="w-fit mx-auto text-white  bg-stone-600 text-lg font-thin px-3 rounded">Other Skills</div>
-                <ul class="flex flex-wrap space-x-3 place-content-center pt-2">
+                <div class="w-fit mx-auto text-white  bg-stone-600 text-base sm:text-lg font-thin px-3 rounded drop-shadow-lg">Other Skills</div>
+                <ul class="flex flex-wrap space-x-3 place-content-center pt-2 text-sm lg:text-base text-stone-800">
                     <li class={other_Skills}>Python</li>
                     <li class={other_Skills}>Django</li>
                     <li class={other_Skills}>Flask</li>
@@ -110,9 +110,9 @@
 				<div class="w-4/6 border-b border-stone-100 mx-auto py-4 divider"></div>
         <div class="others pt-6">
             <div class="w-4/6 mx-auto">
-                <div class="w-fit mx-auto text-white  bg-stone-600 text-lg font-thin px-3 rounded">Interests</div>
+                <div class="w-fit mx-auto text-white  bg-stone-600 text-base sm:text-lg font-thin px-3 rounded drop-shadow-lg">Other Interests</div>
 								<div class="Interests">
-									<ul class="flex flex-wrap space-x-3 place-content-center pt-2" >
+									<ul class="flex flex-wrap space-x-3 place-content-center pt-2 text-sm lg:text-base text-stone-700" >
 											<li>Music</li>
 											<li>Mathematics</li>
 											<li>Data in music</li>

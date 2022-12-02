@@ -10,5 +10,5 @@
     <div class="img">
         <Icon icon={icon} height="20" width="60" />
     </div>
-    <div class="name pt-1 w-fit mx-auto text-center leading-3 text-stone-600 text-sm">{text}</div>
+    <div class="name pt-2 w-fit mx-auto text-center leading-3 text-stone-600 sm:text-cyan-800 text-sm">{text}</div>
 </div>
