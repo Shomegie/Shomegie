@@ -15,8 +15,8 @@
         </div>
         <div class={`h-1/6 ${blur}`}></div>
     </div> -->
-    <div class="absolute backdrop-blur-md bg-black/10 inset-0 z-30 flex justify-end">
-        <div class="bg-stone-800 w-3/4 h-5/6 flex flex-col">
+    <div class="absolute inset-0 z-30 flex justify-end">
+        <div class="bg-stone-800 w-3/4 h-[92%] flex flex-col">
             <div class="h-1/6 w-full bg-orange-400"></div>
             <div class="h-4/6 w-full"></div>
             <div class="h-1/6 w-full bg-lime-400"></div>
