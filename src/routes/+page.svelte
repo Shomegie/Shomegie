@@ -2,6 +2,7 @@
     import { goto } from "$app/navigation";
     let menu =`text-black text-opacity-60 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
     let blur = `backdrop-blur-md bg-black/10`
+    let links = 'text-stone-400 50 font-sans font-light text-lg  w-fit mx-auto p-4 tracking-widest'
 </script>
 
 <!-- mobile view -->
@@ -16,11 +17,39 @@
         <div class={`h-1/6 ${blur}`}></div>
     </div> -->
     <div class="absolute inset-0 z-30 flex justify-end">
-        <div class="bg-stone-800 w-3/4 h-[92%] flex flex-col">
-            <div class="h-1/6 w-full bg-orange-400"></div>
-            <div class="h-4/6 w-full"></div>
-            <div class="h-1/6 w-full bg-lime-400"></div>
+        <div class="bg-zinc-900 border-b-2 border-l-2 rounded border-stone-400 w-3/4 h-[92%] flex flex-col shadow-lg">
+            <div class="h-2/6 w-full">
+                <div class="z-10 h-1/4 w-full px-8 pt-8">
+                    <div class="menu flex justify-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 cursor-pointer h-8 text-[#d7b597]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                                                 
+                    </div>
+                </div>
 
+            </div>
+            <div class="menu h-4/6 w-full bg-orange-80 flex flex-col">
+                <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
+                <div class="flex flex-col">
+                    <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
+                    <div class={links}>HOME</div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
+                    <div class={links}>ABOUT</div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
+                    <div class={links}>CONTACT</div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
+                    <div class={links}>PROJECTS</div>
+                </div>
+                <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
+
+            </div>
 
         </div>
     
