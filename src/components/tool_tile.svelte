@@ -6,7 +6,7 @@
 
 </script>
 
-<div class=" rounded-lg w-fit max-w-[60px] h-fit p-0">
+<div class=" rounded-lg w-fit max-w-[60px] h-fit p-0 pt-10 sm:pt-0">
     <div class="img">
         <Icon icon={icon} height="20" width="60" />
     </div>

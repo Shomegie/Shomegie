@@ -26,7 +26,7 @@
             <div class="helv text-sm pl-1 text-black text-opacity-80 lg:tracking-wider lg:text-base">Fullstack developer, frontend designer, UI/UX designer, Svelte/Sveltekit developer, Tailwind developer</div>
         </div>
     </div>
-    <div class="h-1 w-full bg-[#fffaf0]"></div>
+    <div class="h-0 w-full bg-[#fffaf0]"></div>
     <div class="menu pt-3 hidden sm:block">
         <ul class="flex w-4/5 md:w-4/5 lg:w-4/6 xl:w-4/6 xl:px-10 mx-auto justify-between">
             <li on:click = {()=> goto('/')} on:keydown = {()=> goto('/')} class={menu}>Home</li>
