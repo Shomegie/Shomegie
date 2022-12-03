@@ -1,11 +1,31 @@
 <script>
     import { goto } from "$app/navigation";
     let menu =`text-black text-opacity-60 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
+    let blur = `backdrop-blur-md bg-black/10`
 </script>
 
 <!-- mobile view -->
 
 <div class="absolute sm:hidden inset-0 overflow-hidden">
+    <!-- mobile menu -->
+    <!-- <div class="absolute inset-0 z-30 flex flex-col">
+        <div class="h-5/6 w-full flex">
+            <div class={`w-1/4 ${blur}`}></div>
+            <div class="w-3/4 bg-blue-800"></div>
+        </div>
+        <div class={`h-1/6 ${blur}`}></div>
+    </div> -->
+    <div class="absolute backdrop-blur-md bg-black/10 inset-0 z-30 flex justify-end">
+        <div class="bg-stone-800 w-3/4 h-5/6 flex flex-col">
+            <div class="h-1/6 w-full bg-orange-400"></div>
+            <div class="h-4/6 w-full"></div>
+            <div class="h-1/6 w-full bg-lime-400"></div>
+
+
+        </div>
+    
+    </div>
+
     <div class="helv flex flex-col h-full bg-[#F7DEC8] w-full relative">
         <div class="absolute trap w-1/2 "></div>
         <div class="z-10 h-1/4 w-full px-8 pt-8">
