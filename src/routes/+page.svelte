@@ -51,19 +51,20 @@
                 <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
                 <div class="flex flex-col">
                     <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
-                    <div class={links}>HOME</div>
+                    <div class={links}>H o m e</div>
                 </div>
                 <div class="flex flex-col">
                     <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
-                    <div class={links}>ABOUT</div>
+                    <div class={links}>C o n t a c t - M e</div>
                 </div>
                 <div class="flex flex-col">
                     <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
-                    <div class={links}>CONTACT</div>
+                    <div class={links}>A b o u t</div>
                 </div>
+
                 <div class="flex flex-col">
                     <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
-                    <div class={links}>PROJECTS</div>
+                    <div class={links}>P r o j e c t s</div>
                 </div>
                 <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
 
