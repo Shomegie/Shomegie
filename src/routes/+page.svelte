@@ -32,8 +32,9 @@
         </div>
         <div class={`h-1/6 ${blur}`}></div>
     </div> -->
-    <div class="absolute inset-0 z-30 justify-end transition duration-700 "class:hidden ={!navOpen} class:flex={navOpen}>
-        <div class="bg-zinc-900 border-b-2 border-l-2 rounded border-stone-400 w-2/3 h-[100%] flex flex-col shadow-lg">
+    <div class="absolute inset-0 z-30 transition duration-700 flex "class:hideMenu ={!navOpen} class:showMenu={navOpen} >
+        <div class="h-full w-1/3" on:click={toggleMenu} on:keydown={toggleMenu}></div>
+        <div class="bg-zinc-900 border-b-2 border-l-2 border-stone-400 w-2/3 h-[100%] flex flex-col shadow-lg">
             <div class="h-2/6 w-full">
                 <div class="z-10 h-1/4 w-full px-8 pt-8">
                     <div class="menu flex justify-end">
@@ -76,7 +77,7 @@
         <div class="absolute trap w-1/2 "></div>
         <div class="z-10 h-1/4 w-full px-8 pt-8">
             <div class="menu flex justify-end">
-                <div class="p-2" on:click={toggleMenu} on:keydown={toggleMenu}>
+                <div class="p-1" on:click={toggleMenu} on:keydown={toggleMenu}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-8 cursor-pointer h-8 opacity-70">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                       </svg>
@@ -145,4 +146,12 @@
         border-bottom: 100vh solid #F2FDFF;
         border-right: 35vw solid transparent;
     }
+    
+    .hideMenu{
+        transform: translateX(100%)
+    }
+    .showMenu{
+        transform:translateX(0);
+    }
 </style>
+
