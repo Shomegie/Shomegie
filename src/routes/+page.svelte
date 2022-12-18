@@ -4,6 +4,9 @@
     let blur = `backdrop-blur-md bg-black/10`
     let links = 'text-stone-400 50 font-sans font-light text-lg  w-fit mx-auto p-4 py-6 tracking-widest'
 	let navOpen = false;
+    let slidingMenuItems =`bg-[#f2fdff] pr-5 pl-5 py-3 w-fit ml-20 font-bold font-mono text-xl tracking-widest text-black`
+    // DELETE AFTER EDITING MENU 
+
 
 
 
@@ -26,8 +29,32 @@
 <div class="absolute sm:hidden inset-0 overflow-hidden">
     <!-- mobile menu -->
     <div class="absolute inset-0 z-30 transition duration-700 flex "class:hideMenu ={!navOpen} class:showMenu={navOpen} >
+        <div class="w-full absolute z-50 flex justify-end p-2 mt-4 mr-4">
+            <div class="p-2" on:click={toggleMenu} on:keydown={toggleMenu}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 cursor-pointer h-7 text-black">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+            </div>   
+        </div>
 
         <!-- sliding mobile menu concept -->
+        <div class="h-full w-1/4" on:click={toggleMenu} on:keydown={toggleMenu}></div>
+        <div class="h-full w-3/4 relative">
+            <div class="h-full w-full" on:click={toggleMenu} on:keydown={toggleMenu}></div>
+            
+            <div class="shape-triangle h-full w-full ">
+      
+                <div class="h-full w-full">
+                    <div class="absolute w-full menu-items h-1/2 mt-[55%] flex flex-col justify-between text-xl tracking-wide">
+                        <div class={slidingMenuItems} >Home</div>
+                        <div class={slidingMenuItems}>About</div>
+                        <div class={slidingMenuItems}>Contacts</div>
+                        <div class={slidingMenuItems}>Projects</div>
+                    </div>    
+                </div>
+
+            </div>
+        </div>
         
 
 
@@ -69,9 +96,11 @@
                 </div>
                 <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
 
-            </div> -->
+            </div> 
 
-        </div>
+        </div> 
+
+    -->
     
     </div>
 
@@ -159,6 +188,16 @@
         transition-delay: 0s;
         transition-duration: 800ms;
 
+    }
+
+    .shape-triangle{
+        background-color: #fff;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:-25x;
+        transform: skew(-14deg);
     }
 </style>
 
