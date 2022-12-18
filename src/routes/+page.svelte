@@ -2,7 +2,7 @@
     import { goto } from "$app/navigation";
     let menu =`text-black text-opacity-60 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
     let blur = `backdrop-blur-md bg-black/10`
-    let links = 'text-stone-400 50 font-sans font-light text-lg  w-fit mx-auto p-4 tracking-widest'
+    let links = 'text-stone-400 50 font-sans font-light text-lg  w-fit mx-auto p-4 py-6 tracking-widest'
 	let navOpen = false;
 
 
@@ -25,15 +25,16 @@
 
 <div class="absolute sm:hidden inset-0 overflow-hidden">
     <!-- mobile menu -->
-    <!-- <div class="absolute inset-0 z-30 flex flex-col">
-        <div class="h-5/6 w-full flex">
-            <div class={`w-1/4 ${blur}`}></div>
-            <div class="w-3/4 bg-blue-800"></div>
-        </div>
-        <div class={`h-1/6 ${blur}`}></div>
-    </div> -->
     <div class="absolute inset-0 z-30 transition duration-700 flex "class:hideMenu ={!navOpen} class:showMenu={navOpen} >
-        <div class="h-full w-1/3" on:click={toggleMenu} on:keydown={toggleMenu}></div>
+
+        <!-- sliding mobile menu concept -->
+        
+
+
+
+
+
+        <!-- <div class="h-full w-1/3" on:click={toggleMenu} on:keydown={toggleMenu}></div>
         <div class="bg-zinc-900 border-b-2 border-l-2 border-stone-400 w-2/3 h-[100%] flex flex-col shadow-lg">
             <div class="h-2/6 w-full">
                 <div class="z-10 h-1/4 w-full px-8 pt-8">
@@ -68,7 +69,7 @@
                 </div>
                 <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
 
-            </div>
+            </div> -->
 
         </div>
     
@@ -78,7 +79,7 @@
         <div class="absolute trap w-1/2 "></div>
         <div class="z-10 h-1/4 w-full px-8 pt-8">
             <div class="menu flex justify-end">
-                <div class="p-1" on:click={toggleMenu} on:keydown={toggleMenu}>
+                <div class="p-1" on:click={toggleMenu} on:keydown={toggleMenu} on:keypress={toggleMenu}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-8 cursor-pointer h-8 opacity-70">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                       </svg>
@@ -149,10 +150,15 @@
     }
     
     .hideMenu{
-        transform: translateX(100%)
+        transform: translateX(100%);
+        transition-delay: 0s;
+
     }
     .showMenu{
         transform:translateX(0);
+        transition-delay: 0s;
+        transition-duration: 800ms;
+
     }
 </style>
 
