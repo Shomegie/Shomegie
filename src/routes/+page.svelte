@@ -4,7 +4,7 @@
     let blur = `backdrop-blur-md bg-black/10`
     let links = 'text-stone-400 50 font-sans font-light text-lg  w-fit mx-auto p-4 py-6 tracking-widest'
 	let navOpen = false;
-    let slidingMenuItems =`bg-[#f2fdff] pr-5 pl-5 py-3 w-fit ml-20 font-bold font-mono text-xl tracking-widest text-black`
+    let slidingMenuItems =`bg-black pr-5 pl-5 py-3 w-fit ml-20 font-bold font-mono text-xl tracking-widest text-white`
     // DELETE AFTER EDITING MENU 
 
 
@@ -28,7 +28,7 @@
 
 <div class="absolute sm:hidden inset-0 overflow-hidden">
     <!-- mobile menu -->
-    <div class="absolute inset-0 z-30 transition duration-700 flex "class:hideMenu ={!navOpen} class:showMenu={navOpen} >
+    <div class="absolute inset-0 z-30 transition duration-700 flex"class:hideMenu ={!navOpen} class:showMenu={navOpen} >
         <div class="w-full absolute z-50 flex justify-end p-2 mt-4 mr-4">
             <div class="p-2" on:click={toggleMenu} on:keydown={toggleMenu}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 cursor-pointer h-7 text-black">
