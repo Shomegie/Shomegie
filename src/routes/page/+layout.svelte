@@ -15,7 +15,7 @@
 
 </script>
 
-<div  class=" min-h-screen w-screen bg-[#ffffff] flex flex-col helv pb-16 relative">
+<div  class=" min-h-screen overflow-x-hidden  bg-[#ffffff] flex flex-col helv pb-16 relative">
     <!-- mobile sliding menu -->
     <div class="inset-0 absolute h-screen z-30 bg-red-0 overflow-hidden transition duration-700" class:hideMenu ={!navOpen} class:showMenu={navOpen} >
         <div class="absolute inset-0 z-30 transition duration-700 flex"class:hideMenu ={!navOpen} class:showMenu={navOpen} >
