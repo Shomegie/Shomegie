@@ -15,7 +15,7 @@
 
 </script>
 
-<div  class=" min-h-screen bg-[#ffffff] w-full flex flex-col helv pb-16 relative">
+<div  class=" min-h-screen w-screen bg-[#ffffff] flex flex-col helv pb-16 relative">
     <!-- mobile sliding menu -->
     <div class="inset-0 absolute h-screen z-30 bg-red-0 overflow-hidden transition duration-700" class:hideMenu ={!navOpen} class:showMenu={navOpen} >
         <div class="absolute inset-0 z-30 transition duration-700 flex"class:hideMenu ={!navOpen} class:showMenu={navOpen} >
@@ -25,7 +25,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                       </svg>
                 </div>   
-            </div>
+            </div> 
     
             <!-- sliding mobile menu concept -->
             <div class="h-full w-1/4" on:click={toggleMenu} on:keydown={toggleMenu}></div>
