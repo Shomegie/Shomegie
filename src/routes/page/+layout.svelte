@@ -17,7 +17,7 @@
 
 <div  class=" min-h-screen bg-[#ffffff] w-full flex flex-col helv pb-16 relative">
     <!-- mobile sliding menu -->
-    <div class="inset-0 absolute h-screen w-full z-30 bg-red-0 overflow-hidden transition duration-700" class:hideMenu ={!navOpen} class:showMenu={navOpen} >
+    <div class="inset-0 absolute h-screen z-30 bg-red-0 overflow-hidden transition duration-700" class:hideMenu ={!navOpen} class:showMenu={navOpen} >
         <div class="absolute inset-0 z-30 transition duration-700 flex"class:hideMenu ={!navOpen} class:showMenu={navOpen} >
             <div class="w-full absolute z-50 flex justify-end p-2  pr-5 pt-3 mt-4 mr-4">
                 <div class="p-2" on:click={toggleMenu} on:keydown={toggleMenu}>
