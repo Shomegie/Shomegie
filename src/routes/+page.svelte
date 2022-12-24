@@ -6,6 +6,7 @@
 	let navOpen = false;
     let slidingMenuItems =`bg-black pr-5 pl-4 py-2 w-fit ml-20 font-bold font-mono text-xl tracking-widest text-white`
     // DELETE AFTER EDITING MENU 
+    navOpen = true;
 
 
 
@@ -45,7 +46,7 @@
             <div class="shape-triangle h-full w-full ">
       
                 <div class="h-full w-full">
-                    <div class="absolute w-full menu-items h-1/2 mt-[55%] flex flex-col justify-between text-xl tracking-wide">
+                    <div class="absolute w-full menu-items h-1/2 mt-[80%] flex flex-col justify-between text-xl tracking-wide">
                         <div class={slidingMenuItems} >Home</div>
                         <div class={slidingMenuItems}>About</div>
                         <div class={slidingMenuItems}>Contacts</div>
@@ -180,12 +181,10 @@
     
     .hideMenu{
         transform: translateX(100%);
-        transition-delay: 0s;
 
     }
     .showMenu{
         transform:translateX(0);
-        transition-delay: 0s;
         transition-duration: 800ms;
 
     }
