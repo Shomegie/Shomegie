@@ -4,10 +4,7 @@
     let blur = `backdrop-blur-md bg-black/10`
     let links = 'text-stone-400 50 font-sans font-light text-lg  w-fit mx-auto p-4 py-6 tracking-widest'
 	let navOpen = false;
-    let slidingMenuItems =`bg-black pr-5 pl-4 py-2 w-fit ml-20 font-bold font-mono text-xl tracking-widest text-white`
-    // DELETE AFTER EDITING MENU 
-    navOpen = true;
-
+    let slidingMenuItems =`bg-black pr-5 pl-4 py-2 w-fit ml-20 font-bold font-mono text-xl tracking-widest text-white hover:bg-white hover:text-black transition duration-200 cursor-pointer`
 
 
 
@@ -16,21 +13,15 @@
         navOpen = !navOpen
     }
 
-	
-    function handleNavWithKey(e) {
-        console.log(e.code);
-        if (e.code === "F1") {
-            navOpen = !navOpen;
-        }
-    }	
+
 </script>
 
 <!-- mobile view -->
 
 <div class="absolute sm:hidden inset-0 overflow-hidden">
     <!-- mobile menu -->
-    <div class="absolute inset-0 z-30 transition duration-700 flex"class:hideMenu ={!navOpen} class:showMenu={navOpen} >
-        <div class="w-full absolute z-50 flex justify-end p-2 mt-4 mr-4">
+    <div class="absolute inset-0 z-30 flex"class:hideMenu ={!navOpen} class:showMenu={navOpen} >
+        <div class="w-full absolute z-50 flex justify-end p-2  pr-5 pt-3 mt-4 mr-4">
             <div class="p-2" on:click={toggleMenu} on:keydown={toggleMenu}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 cursor-pointer h-7 text-stone-500">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -47,62 +38,15 @@
       
                 <div class="h-full w-full">
                     <div class="absolute w-full menu-items h-1/2 mt-[80%] flex flex-col justify-between text-xl tracking-wide">
-                        <div class={slidingMenuItems} >Home</div>
-                        <div class={slidingMenuItems}>About</div>
-                        <div class={slidingMenuItems}>Contacts</div>
-                        <div class={slidingMenuItems}>Projects</div>
+                        <div on:click = {()=>  goto('/')} on:keydown = {()=> goto('/')} class={slidingMenuItems} >Home</div>
+                        <div on:click = {()=> goto('/page/about')} on:keydown = {()=> goto('/page/about')} class={slidingMenuItems}>About</div>
+                        <div on:click = {()=> goto('/page/contact')} on:keydown = {()=> goto('/page/contact')} class={slidingMenuItems}>Contacts</div>
+                        <div on:click = {()=> goto('/page/projects')} on:keydown = {()=> goto('/page/projects')} class={slidingMenuItems}>Projects</div>
                     </div>    
                 </div>
 
             </div>
         </div>
-        
-
-
-
-
-
-        <!-- <div class="h-full w-1/3" on:click={toggleMenu} on:keydown={toggleMenu}></div>
-        <div class="bg-zinc-900 border-b-2 border-l-2 border-stone-400 w-2/3 h-[100%] flex flex-col shadow-lg">
-            <div class="h-2/6 w-full">
-                <div class="z-10 h-1/4 w-full px-8 pt-8">
-                    <div class="menu flex justify-end">
-                        <div class="p-2" on:click={toggleMenu} on:keydown={toggleMenu}>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 cursor-pointer h-8 text-[#d7b597]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                              </svg>
-                        </div>                  
-                    </div>
-                </div>
-
-            </div>
-            <div class="menu h-4/6 w-full bg-orange-80 flex flex-col">
-                <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
-                <div class="flex flex-col">
-                    <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
-                    <div class={links}>H o m e</div>
-                </div>
-                <div class="flex flex-col">
-                    <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
-                    <div class={links}>C o n t a c t - M e</div>
-                </div>
-                <div class="flex flex-col">
-                    <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
-                    <div class={links}>A b o u t</div>
-                </div>
-
-                <div class="flex flex-col">
-                    <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
-                    <div class={links}>P r o j e c t s</div>
-                </div>
-                <div class="border-t w-[92%] border-stone-800 mx-auto"></div>
-
-            </div> 
-
-        </div> 
-
-    -->
-    
     </div>
 
     <div class="helv flex flex-col h-full bg-[#F7DEC8] w-full relative">
@@ -181,11 +125,13 @@
     
     .hideMenu{
         transform: translateX(100%);
+        transition-timing-function: ease;
 
     }
     .showMenu{
         transform:translateX(0);
-        transition-duration: 800ms;
+        transition-duration: 700ms;
+        transition-timing-function: ease;
 
     }
 
