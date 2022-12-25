@@ -1,10 +1,11 @@
 <script>
     import { goto } from "$app/navigation";
+
+
     let menu =`text-black text-opacity-60 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
-    let blur = `backdrop-blur-md bg-black/10`
-    let links = 'text-stone-400 50 font-sans font-light text-lg  w-fit mx-auto p-4 py-6 tracking-widest'
 	let navOpen = false;
-    let slidingMenuItems =`bg-black pr-5 pl-4 py-2 w-fit ml-20 font-bold font-mono text-xl tracking-widest text-white hover:bg-white hover:text-black transition duration-200 cursor-pointer`
+    let mobile_menu_li = `text-stone-500 border-2 w-5/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:bg-black hover:text-white`
+
 
 
 
@@ -20,36 +21,31 @@
 
 <div class="absolute sm:hidden inset-0 overflow-hidden">
     <!-- mobile menu -->
-    <div class="absolute inset-0 z-30 flex"class:hideMenu ={!navOpen} class:showMenu={navOpen} >
-        <div class="w-full absolute z-50 flex justify-end p-2  pr-5 pt-3 mt-4 mr-4">
-            <div class="p-2" on:click={toggleMenu} on:keydown={toggleMenu}>
+    <div  class="absolute inset-0 z-30 bg-[#f7dec8] w-full flex flex-col text-white" class:hidden={navOpen}>
+        <div class="relative w-full h-full flex flex-col items-end">
+            <div class="menu_trap w-1/2 absolute"></div>
+
+            <div class="pt-10 pr-9 flex w-full justify-end z-30" on:click={toggleMenu} on:keydown={toggleMenu}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 cursor-pointer h-7 text-stone-500">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
+                </svg>
             </div>   
-        </div>
-
-        <!-- sliding mobile menu concept -->
-        <div class="h-full w-1/4" on:click={toggleMenu} on:keydown={toggleMenu}></div>
-        <div class="h-full w-3/4 relative">
-            <div class="h-full w-full" on:click={toggleMenu} on:keydown={toggleMenu}></div>
-            
-            <div class="shape-triangle h-full w-full ">
-      
-                <div class="h-full w-full">
-                    <div class="absolute w-full menu-items h-1/2 mt-[80%] flex flex-col justify-between text-xl tracking-wide">
-                        <div on:click = {()=>  goto('/')} on:keydown = {()=> goto('/')} class={slidingMenuItems} >Home</div>
-                        <div on:click = {()=> goto('/page/about')} on:keydown = {()=> goto('/page/about')} class={slidingMenuItems}>About</div>
-                        <div on:click = {()=> goto('/page/contact')} on:keydown = {()=> goto('/page/contact')} class={slidingMenuItems}>Contacts</div>
-                        <div on:click = {()=> goto('/page/projects')} on:keydown = {()=> goto('/page/projects')} class={slidingMenuItems}>Projects</div>
-                    </div>    
-                </div>
-
+            <div class="absolute w-full h-fit top-0 bottom-5 font-sans my-auto">
+                <ul class="space-y-6">
+                    <li on:click = {toggleMenu} on:keydown = {toggleMenu} class="text-white bg-black border-2 w-5/6 mx-auto border-stone-500 py-4 text-center rounded-lg">Home</li>
+                    <li on:click = {()=>{goto('/page/about')}} on:keydown = {()=> goto('/page/about')} class={mobile_menu_li}>About</li>
+                    <li on:click = {()=>{goto('/page/contact')}} on:keydown = {()=> goto('/page/contact')} class={mobile_menu_li}>Contact</li>
+                    <li on:click = {()=>{goto('/page/projects')}} on:keydown = {()=> goto('/page/projects')} class={mobile_menu_li}>Projects</li>
+                </ul>
             </div>
+            <div class="absolute h-4 w-1/3 bg-black blur-md top-20 left-8 mix-blend-multiply opacity-30" ></div>
+            <div class="absolute h-4 w-3/5 bg-stone-500 blur-md top-24 left-8 mix-blend-multiply opacity-50 "></div>
+
         </div>
+
     </div>
 
-    <div class="helv flex flex-col h-full bg-[#F7DEC8] w-full relative">
+    <div class="helv flex flex-col h-full bg-[#F7DEC8] w-full relative" >
         <div class="absolute trap w-1/2 "></div>
         <div class="z-10 h-1/4 w-full px-8 pt-8">
             <div class="menu flex justify-end">
@@ -122,6 +118,13 @@
         border-bottom: 100vh solid #F2FDFF;
         border-right: 35vw solid transparent;
     }
+    .menu_trap{
+        border-bottom: 100vh solid #F2FDFF;
+
+
+        border-left: 35vw solid transparent;
+    }
+    
     
     .hideMenu{
         transform: translateX(100%);
@@ -145,5 +148,6 @@
         transform: skew(-14deg);
 
     }
+ 
 </style>
 
