@@ -3,7 +3,7 @@
 
 
     let menu =`text-black text-opacity-60 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
-	let navOpen = false;
+	let navOpen = true;
     let mobile_menu_li = `text-stone-500 border-2 w-5/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:bg-black hover:text-white`
 
 
