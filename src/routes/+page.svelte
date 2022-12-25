@@ -4,7 +4,7 @@
 
     let menu =`text-black text-opacity-60 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
 	let navOpen = true;
-    let mobile_menu_li = `text-stone-500 border-2 w-5/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:bg-black hover:text-white`
+    let mobile_menu_li = `text-stone-500 border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:bg-black hover:text-white`
 
 
 
@@ -30,9 +30,9 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </div>   
-            <div class="absolute w-full h-fit top-0 bottom-5 font-sans my-auto">
-                <ul class="space-y-6">
-                    <li on:click = {toggleMenu} on:keydown = {toggleMenu} class="text-white bg-black border-2 w-5/6 mx-auto border-stone-500 py-4 text-center rounded-lg">Home</li>
+            <div class="absolute w-full h-fit top-0 bottom-0 font-sans my-auto">
+                <ul class="space-y-7">
+                    <li on:click = {toggleMenu} on:keydown = {toggleMenu} class="text-white bg-black border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg">Home</li>
                     <li on:click = {()=>{goto('/page/about')}} on:keydown = {()=> goto('/page/about')} class={mobile_menu_li}>About</li>
                     <li on:click = {()=>{goto('/page/contact')}} on:keydown = {()=> goto('/page/contact')} class={mobile_menu_li}>Contact</li>
                     <li on:click = {()=>{goto('/page/projects')}} on:keydown = {()=> goto('/page/projects')} class={mobile_menu_li}>Projects</li>
