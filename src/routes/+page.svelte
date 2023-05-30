@@ -77,7 +77,7 @@
 <!-- desktop view -->
 
 <div hidden class="h-[100vh] bg-[#fed8b7] w-full sm:flex flex-col helv">
-    <div class="h-[240px] bg-[#F2FDFF] w-full flex items-center justify-center">
+    <div class="h-[240px] bg-[#FFF] w-full flex items-center justify-center">
         <div class=" w-fit flex flex-col">
             <div class="helv text-6xl lg:text-7xl tracking-tight text-black text-opacity-80 ">Shomegie Ikerodah</div>
             <div class="helv text-sm pl-1 text-black text-opacity-80 lg:tracking-wider lg:text-base">Fullstack developer, frontend designer, UI/UX designer, Svelte/Sveltekit developer, Tailwind developer</div>

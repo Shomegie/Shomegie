@@ -6,7 +6,7 @@
 </script>
 
 <div class=" w-full pt-6">
-    <div class="flex flex-col w-5/6 sm:w-4/6 mx-auto ">
+    <div class="flex flex-col w-5/6 sm:w-5/6 md:w-5/6 lg:w-4/6 mx-auto ">
         <div class="text-2xl lg:text-3xl tracking-tight w-fit bg-[#f7dec8] text-black py-1 px-2 pr-10 text-opacity-90 mb-1">About Me</div>
         <div class="w-full border-b border-stone-200 mx-auto mt-4 mb-3 divider"></div>
 
@@ -26,11 +26,6 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- <div class="">Education
-                    <br>
-                    Computer Science  - Lancaster University
-                </div> -->
             </div>
         </div>
         <div class="w-5/6 border-b border-stone-200 mx-auto py-4 divider"></div>
