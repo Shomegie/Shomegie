@@ -1,10 +1,12 @@
 <script>
     import { goto } from "$app/navigation";
     import Footer from "../../components/footer.svelte"
+    import { page } from '$app/stores';  
 
 
     let menu =`text-black text-opacity-70 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
     let slidingMenuItems =`bg-black pr-5 pl-4 py-2 w-fit ml-20 font-bold font-mono text-xl tracking-widest text-white hover:bg-white hover:text-black transition duration-200 cursor-pointer`
+    let mobile_menu_li = `text-stone-500 border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:bg-black hover:text-white`
 
     let navOpen = false;    
     const toggleMenu = () => {
@@ -12,12 +14,42 @@
         navOpen = !navOpen
     }
 
+    let aboutNav = () =>{
+        if ($page.url.pathname == '/page/about'){
+            toggleMenu()
+        }else{
+            navOpen = false;
+            goto('/page/about');
+        }
+    }
+
+    let contactNav = () =>{
+        if ($page.url.pathname == '/page/contact'){
+            toggleMenu()
+        }else{
+            navOpen = false;
+            goto('/page/contact');
+        }
+    }
+
+    let projectsNav = () =>{
+        if ($page.url.pathname == '/page/projects'){
+            toggleMenu()
+        }else{
+            navOpen = false;
+            goto('/page/projects');
+        }
+    }
+
+
+
 
 </script>
 
 <div  class=" min-h-screen overflow-x-hidden  bg-[#ffffff] flex flex-col helv pb-16 relative">
+    <div class="text-blue-800">page: {$page.url.pathname}</div>
     <!-- mobile sliding menu -->
-    <div class="inset-0 absolute h-screen z-30 bg-red-0 overflow-hidden transition duration-700" class:hideMenu ={!navOpen} class:showMenu={navOpen} >
+    <div class="inset-0 absolute h-screen z-30 bg-[#f7dec8] overflow-hidden transition duration-700" class:hideMenu ={!navOpen} class:showMenu={navOpen} >
         <div class="absolute inset-0 z-30 transition duration-700 flex"class:hideMenu ={!navOpen} class:showMenu={navOpen} >
             <div class="w-full absolute z-50 flex justify-end p-2  pr-5 pt-3 mt-4 mr-4">
                 <div class="p-2" on:click={toggleMenu} on:keydown={toggleMenu}>
@@ -27,24 +59,20 @@
                 </div>   
             </div> 
     
-            <!-- sliding mobile menu concept -->
-            <div class="h-full w-1/4" on:click={toggleMenu} on:keydown={toggleMenu}></div>
-            <div class="h-full w-3/4 relative">
-                <div class="h-full w-full" on:click={toggleMenu} on:keydown={toggleMenu}></div>
-                
-                <div class="shape-triangle h-full w-full ">
-          
-                    <div class="h-full w-full">
-                        <div class="absolute w-full menu-items h-1/2 mt-[80%] flex flex-col justify-between text-xl tracking-wide">
-                            <div on:click = {()=> goto('/')} on:keydown = {()=> goto('/')} class={slidingMenuItems} >Home</div>
-                            <div on:click = {()=>{navOpen=false; goto('/page/about')}} on:keydown = {()=> goto('/page/about')} class={slidingMenuItems}>About</div>
-                            <div on:click = {()=>{navOpen=false; goto('/page/contact')}} on:keydown = {()=> goto('/page/contact')} class={slidingMenuItems}>Contacts</div>
-                            <div on:click = {()=>{navOpen=false; goto('/page/projects')}} on:keydown = {()=> goto('/page/projects')} class={slidingMenuItems}>Projects</div>
-                        </div>    
-                    </div>
-    
-                </div>
+
+            <div class="absolute w-full h-fit top-0 bottom-0 font-sans my-auto">
+                <ul class="space-y-7">
+                    <li on:click = {toggleMenu} on:keydown = {toggleMenu} class="text-white bg-black border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg">Home</li>
+                    <li on:click = {()=>{aboutNav()}} on:keyup = {aboutNav} class={mobile_menu_li}>About</li>
+                    <li on:click = {contactNav} on:keyup = {contactNav} class={mobile_menu_li}>Contact</li>
+                    <li on:click = {projectsNav} on:keyup = {projectsNav} class={mobile_menu_li}>Projects</li>
+                    <!-- <li on:click = {()=>{goto('/page/projects')}} on:keydown = {()=> goto('/page/projects')} class={mobile_menu_li}>Projects</li> -->
+                </ul>
             </div>
+            <div class="absolute h-4 w-1/3 bg-black blur-md top-20 left-8 mix-blend-multiply opacity-30" ></div>
+            <div class="absolute h-4 w-3/5 bg-stone-500 blur-md top-24 left-8 mix-blend-multiply opacity-50 "></div>
+            
+
         </div>
     </div>
     <!-- mobile view -->
