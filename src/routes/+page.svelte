@@ -4,7 +4,7 @@
 
     let menu =`text-black text-opacity-60 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
 	let navOpen = true;
-    let mobile_menu_li = `text-stone-500 border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:bg-black hover:text-white`
+    let mobile_menu_li = `text-stone-500 border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:text-black cursor-pointer`
 
 
 
@@ -32,10 +32,10 @@
             </div>   
             <div class="absolute w-full h-fit top-0 bottom-0 font-sans my-auto">
                 <ul class="space-y-7">
-                    <li on:click = {toggleMenu} on:keydown = {toggleMenu} class="text-white bg-black border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg">Home</li>
-                    <li on:click = {()=>{goto('/page/about')}} on:keydown = {()=> goto('/page/about')} class={mobile_menu_li}>About</li>
-                    <li on:click = {()=>{goto('/page/contact')}} on:keydown = {()=> goto('/page/contact')} class={mobile_menu_li}>Contact</li>
-                    <li on:click = {()=>{goto('/page/projects')}} on:keydown = {()=> goto('/page/projects')} class={mobile_menu_li}>Projects</li>
+                    <li on:click = {toggleMenu} on:keyup = {toggleMenu} class="text-white bg-black border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg cursor-pointer">Home</li>
+                    <li on:click = {()=>{goto('/page/about')}} on:keyup = {()=> goto('/page/about')} class={mobile_menu_li}>About</li>
+                    <li on:click = {()=>{goto('/page/contact')}} on:keyup = {()=> goto('/page/contact')} class={mobile_menu_li}>Contact</li>
+                    <li on:click = {()=>{goto('/page/projects')}} on:keyup = {()=> goto('/page/projects')} class={mobile_menu_li}>Projects</li>
                 </ul>
             </div>
             <div class="absolute h-4 w-1/3 bg-black blur-md top-20 left-8 mix-blend-multiply opacity-30" ></div>
