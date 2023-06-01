@@ -5,10 +5,12 @@
 
 
     let menu =`text-black text-opacity-70 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
-    let slidingMenuItems =`bg-black pr-5 pl-4 py-2 w-fit ml-20 font-bold font-mono text-xl tracking-widest text-white hover:bg-white hover:text-black transition duration-200 cursor-pointer`
-    let mobile_menu_li = `text-stone-500 border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:bg-black hover:text-white`
+    // let slidingMenuItems =`bg-black pr-5 pl-4 py-2 w-fit ml-20 font-bold font-mono text-xl tracking-widest text-white hover:bg-white hover:text-black transition duration-200 cursor-pointer`
+    let mobile_menu_li = `text-stone-500 border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:text-black cursor-pointer`
+    let selected_mobile_menu_li = `text-white bg-rose-800 border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:bg-rose-900 hover:text-white hover:text-white cursor-pointer`
 
-    let navOpen = false;    
+
+    let navOpen = true;    
     const toggleMenu = () => {
         console.log("toggle menu")
         navOpen = !navOpen
@@ -47,7 +49,6 @@
 </script>
 
 <div  class=" min-h-screen overflow-x-hidden  bg-[#ffffff] flex flex-col helv pb-16 relative">
-    <div class="text-blue-800">page: {$page.url.pathname}</div>
     <!-- mobile sliding menu -->
     <div class="inset-0 absolute h-screen z-30 bg-[#f7dec8] overflow-hidden transition duration-700" class:hideMenu ={!navOpen} class:showMenu={navOpen} >
         <div class="absolute inset-0 z-30 transition duration-700 flex"class:hideMenu ={!navOpen} class:showMenu={navOpen} >
@@ -62,10 +63,10 @@
 
             <div class="absolute w-full h-fit top-0 bottom-0 font-sans my-auto">
                 <ul class="space-y-7">
-                    <li on:click = {toggleMenu} on:keydown = {toggleMenu} class="text-white bg-black border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg">Home</li>
-                    <li on:click = {()=>{aboutNav()}} on:keyup = {aboutNav} class={mobile_menu_li}>About</li>
-                    <li on:click = {contactNav} on:keyup = {contactNav} class={mobile_menu_li}>Contact</li>
-                    <li on:click = {projectsNav} on:keyup = {projectsNav} class={mobile_menu_li}>Projects</li>
+                    <li on:click = {()=>{navOpen = false; goto('/')}} on:keydown = {()=>{navOpen = false; goto('/')}} class={mobile_menu_li}>Home</li>
+                    <li on:click = {()=>{aboutNav()}} on:keyup = {aboutNav} class={$page.url.pathname !='/page/about'?mobile_menu_li:selected_mobile_menu_li}>About</li>
+                    <li on:click = {contactNav} on:keyup = {contactNav} class={$page.url.pathname !='/page/contact'?mobile_menu_li:selected_mobile_menu_li}>Contact</li>
+                    <li on:click = {projectsNav} on:keyup = {projectsNav} class={$page.url.pathname !='/page/projects'?mobile_menu_li:selected_mobile_menu_li}>Projects</li>
                     <!-- <li on:click = {()=>{goto('/page/projects')}} on:keydown = {()=> goto('/page/projects')} class={mobile_menu_li}>Projects</li> -->
                 </ul>
             </div>
