@@ -4,7 +4,7 @@
 
     let menu =`text-black text-opacity-60 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
 	let navOpen = true;
-    let mobile_menu_li = `text-stone-800 border-2 w-4/6 mx-auto border-stone-700 py-4 text-center rounded-lg hover:text-rose-900 cursor-pointer`
+    let mobile_menu_li = `text-stone-800 border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:text-rose-900 cursor-pointer`
 
 
 

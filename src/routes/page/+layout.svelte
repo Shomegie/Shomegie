@@ -6,7 +6,7 @@
 
     let menu =`text-black text-opacity-70 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
     // let slidingMenuItems =`bg-black pr-5 pl-4 py-2 w-fit ml-20 font-bold font-mono text-xl tracking-widest text-white hover:bg-white hover:text-black transition duration-200 cursor-pointer`
-    let mobile_menu_li = `text-stone-800 border-2 w-4/6 mx-auto border-stone-700 py-4 text-center rounded-lg hover:text-rose-900 cursor-pointer`
+    let mobile_menu_li = `text-stone-800 border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:text-rose-900 cursor-pointer`
     let selected_mobile_menu_li = `text-white bg-black border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg cursor-pointer`
 
 
