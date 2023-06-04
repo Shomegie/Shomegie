@@ -7,8 +7,8 @@
     //let mobile_menu_li = `text-stone-800 border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:text-rose-900 cursor-pointer`
     // temp_home = 'text-white bg-black border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg cursor-pointer'
 
-    let selected_mobile_menu_li = `text-white bg-black border-2 w-4/6 mx-auto border-[#F7DEC8] py-4 text-center rounded-lg cursor-pointer`
-    let mobile_menu_li = `text-[#222] border-2 w-3/5 mx-auto border-[#333] py-3 text-center rounded cursor-pointer`
+    let selected_mobile_menu_li = `text-white bg-opacity- bg-black border-2 w-4/6 mx-auto border-[#F7DEC8] py-3 text-center rounded-lg cursor-pointer`
+    let mobile_menu_li = `text-[#222] border-2 w-3/5 mx-auto border-[#333] py-3 text-center border-opacity-10 hover:text-white rounded cursor-pointer`
 
 
 
