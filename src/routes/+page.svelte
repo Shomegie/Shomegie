@@ -19,6 +19,20 @@
         navOpen = !navOpen
     }
 
+    let sendEmail = async () =>{
+        console.log("clocked")
+        
+        let email_params = {
+            method: "GET",
+            // headers: { 'Content-Type': 'application/json',},
+            // body: JSON.stringify({ name:'Ella', email:'ee@fmail.com', message:'Hello there, Im ella' }),
+        }
+
+        const res = await fetch('/api/SendEmail/',email_params)
+
+        const disp = await res.json()
+        console.log(disp)
+    }
 
 </script>
 
@@ -107,7 +121,7 @@
                 <div class="border-b border-black w-fit pr-1 border-opacity-10">fullstack web developer.</div>
             </div>
             <div class="pt-10">
-                <div class="w-fit bg-black text-white mx-auto rounded-full py-3 px-5 text-sm cursor-pointer hover:bg-blue-700 hover:text-white transition duration-200">Download Resume</div>
+                <div on:click={sendEmail()} on:keyup={sendEmail} class="w-fit bg-black text-white mx-auto rounded-full py-3 px-5 text-sm cursor-pointer hover:bg-blue-700 hover:text-white transition duration-200">Download Resume</div>
             </div>
         </div>
     </div>
