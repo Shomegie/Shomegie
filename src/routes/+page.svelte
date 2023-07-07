@@ -121,7 +121,7 @@
                 <div class="border-b border-black w-fit pr-1 border-opacity-10">fullstack web developer.</div>
             </div>
             <div class="pt-10">
-                <div on:click={sendEmail()} on:keyup={sendEmail} class="w-fit bg-black text-white mx-auto rounded-full py-3 px-5 text-sm cursor-pointer hover:bg-blue-700 hover:text-white transition duration-200">Download Resume</div>
+                <div on:click={sendEmail} on:keyup={sendEmail} class="w-fit bg-black text-white mx-auto rounded-full py-3 px-5 text-sm cursor-pointer hover:bg-blue-700 hover:text-white transition duration-200">Download Resume</div>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 // src/routes/sendEmail.js
 import nodemailer from 'nodemailer';
-import { env } from '$env/dynamic/private'
+// import { env } from '$env/dynamic/private'
 
 
 
@@ -10,7 +10,7 @@ export async function GET(request) {
 
   let name = "Nancy"
   let email = "nn@gmail.com"
-  let message = "Hello how are you"
+  let message = "Test message"
 
   const transporter = nodemailer.createTransport({
     // Specify your email provider details here
