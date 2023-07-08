@@ -1,14 +1,7 @@
 <script>
     import {page} from '$app/stores'
-    import { fade } from 'svelte/transition';
-
     export let form;
-    // export let data;
-
     console.log($page.form)
-
-
-
 </script>
 
 <div class="w-full pt-6">
@@ -29,12 +22,8 @@
                 <div class="w-full">
                     <button class="  w-1/2 mx-auto block bg-black text-white rounded-full py-3 px-5 text-sm cursor-pointer hover:bg-blue-700 hover:text-white transition duration-200" type="submit">Send</button>
                 </div>
-                
            </form>
         </div>
-        <!-- <div class="bg-stone-100 animate-bounce text-stone-600 text-center mt-10 ">Message Sent</div> -->
-        <!-- <div class="bg-red-100 text-stone-600 text-center mt-10 ">Error Sending Message</div> -->
-
         {#if form?.val}
             {#if form.body.success}
                 <div class="bg-stone-100 text-stone-600 animate-bounce text-center mt-10 ">{form.body.message}</div>
