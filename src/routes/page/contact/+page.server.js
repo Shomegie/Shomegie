@@ -12,10 +12,6 @@ export const actions = {
         let subject = data.get('subject')
         let message = data.get('message')
 
-
-
-
-        //console.log(data.get('email'))
         const transporter = nodemailer.createTransport({
             service:'gmail',
             auth: {
@@ -26,7 +22,7 @@ export const actions = {
         const mailOptions = {
             from: email,
             to: env.EMAIL,
-            subject: 'New Custom Message',
+            subject: subject,
             text: `Name: ${name}\nEmail: ${email}\n\nMessage: ${message}`,
         };
 
