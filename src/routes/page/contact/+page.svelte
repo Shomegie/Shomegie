@@ -1,4 +1,11 @@
 <script>
+    import {page} from '$app/stores'
+    export let form;
+    // export let data;
+
+    console.log($page.form)
+
+
 
 </script>
 
@@ -14,8 +21,8 @@
                     <input class="focus:outline-none focus:border-stone-400 w-1/2 border-2 rounded-lg border-stone-600 pl-2 py-1" placeholder="email" type="email" name="email" required>
                 </div>
 
-                <input class="focus:outline-none focus:border-stone-400 w-full border-2 rounded-lg border-stone-600 pl-2 py-1"  placeholder="subject" type="text" name="hatch" required>
-                <textarea placeholder="your message" class="focus:outline-none focus:border-stone-400 border-2 rounded pt-1 pl-2 border-stone-600"  rows="6" name="hatch2" required></textarea>
+                <input class="focus:outline-none focus:border-stone-400 w-full border-2 rounded-lg border-stone-600 pl-2 py-1"  placeholder="subject" type="text" name="subject" required>
+                <textarea placeholder="your message" class="focus:outline-none focus:border-stone-400 border-2 rounded pt-1 pl-2 border-stone-600"  rows="6" name="message" required></textarea>
 
                 <div class="w-full">
                     <button class="  w-1/2 mx-auto block bg-black text-white rounded-full py-3 px-5 text-sm cursor-pointer hover:bg-blue-700 hover:text-white transition duration-200" type="submit">Send</button>
@@ -23,5 +30,8 @@
                 
            </form>
         </div>
+        {#if form?.val}
+            <div class="bg-red-500 text-center mt-10 ">{$page.form.body.message} has logged in</div>
+        {/if}
     </div>
 </div>
