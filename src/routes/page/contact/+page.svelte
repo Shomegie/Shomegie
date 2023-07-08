@@ -1,5 +1,7 @@
 <script>
     import {page} from '$app/stores'
+    import { fade } from 'svelte/transition';
+
     export let form;
     // export let data;
 
@@ -30,8 +32,15 @@
                 
            </form>
         </div>
+        <!-- <div class="bg-stone-100 animate-bounce text-stone-600 text-center mt-10 ">Message Sent</div> -->
+        <!-- <div class="bg-red-100 text-stone-600 text-center mt-10 ">Error Sending Message</div> -->
+
         {#if form?.val}
-            <div class="bg-red-500 text-center mt-10 ">{$page.form.body.message} has logged in</div>
+            {#if form.body.success}
+                <div class="bg-stone-100 text-stone-600 animate-bounce text-center mt-10 ">{form.body.message}</div>
+            {:else}
+                <div class="bg-red-100 text-stone-600 text-center mt-10 ">{form.body.message}</div>
+            {/if}
         {/if}
     </div>
 </div>
