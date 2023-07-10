@@ -2,6 +2,31 @@
     import ProjectCard from "../../../components/project_card.svelte";
 	import ProjectCard_2 from "../../../components/project_card_2.svelte";
 
+    const projects = [
+        {
+            name:'Spotify Artist Top Track Preview',
+            tech:'Svelte, Sveltekit, Tailwind, SpotifyAPI',
+            desc:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe aspernatur recusandae a',
+            github:'link_url',
+            site:'link_url'
+        },
+        {
+            name:'BlackJack2022',
+            tech:'Svelte, Sveltekit, Tailwind',
+            desc:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe aspernatur recusandae a.',
+            github:'link_url',
+            site:'link_url'
+        },
+        {
+            name:'Nithalos International School',
+            tech:'Svelte, Sveltekit, Tailwind',
+            desc:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe aspernatur recusandae a',
+            github:'link_url',
+            site:'link_url'
+        }
+    ]
+
+
 </script>
 
 <div class=" pt-10 min-h-[50vh] w-full">
