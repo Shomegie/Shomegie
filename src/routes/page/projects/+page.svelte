@@ -34,10 +34,11 @@
         <div class="text-3xl lg:text-4xl tracking-tight w-fit bg-[#f7dec8] text-black px-2 py-1 pr-10 text-opacity-90">Projects</div>
     </div> -->
 
+
     <div class="w-4/5 mx-auto space-y-8">
-        <ProjectCard_2 />
-        <ProjectCard_2 />
-        <ProjectCard_2 />
+        {#each projects as project }
+            <ProjectCard_2 {project} />
+        {/each}
     </div>
 
 <!-- 
