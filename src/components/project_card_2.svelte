@@ -11,7 +11,7 @@
     export let project;
 </script>
 
-<div class="w-full h-44 bg-[#fcecdd] flex text-indigo-700 cursor-pointer hover:text-indigo-900 transition duration-300">
+<div class="w-full h-24 lg:h-44 bg-[#fcecdd] flex text-indigo-700 cursor-pointer hover:text-indigo-900 transition duration-300">
     <div class="h-full w-1/3 bg-[#f7dec8] border border-orange-200 border-r-0"></div>
     <div class="h-full w-2/3 py-2 pl-2 pr-2 -space-y-1 relative border border-orange-200 border-l-0">
         <div class="text-xl tracking-tight font-bold m-0 p-0">{project.name}</div>
