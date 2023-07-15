@@ -11,13 +11,13 @@
     export let project;
 </script>
 
-<div class="w-full h-44 lg:h-44 bg-gray-800 flex text-sky-400 cursor-pointer hover:text-sky-600 transition duration-300">
+<div class="w-full h-44 lg:h-44 bg-gray-800 flex text-sky-400 cursor-pointer hover:bg-gray-900 transition duration-300">
     <div class="h-full w-1/3 bg-[#f7dec8] border border-orange-200 border-r-0"></div>
     <div class="h-full w-2/3 py-2 pl-2 pr-2 -space-y-1 relative border border-orange-200 border-l-0">
         <div class="text-xl tracking-tight font-bold m-0 p-0">{project.name}</div>
         <div class="text-sm text-blue-700 m-0 p-0">[{project.tech}]</div>
         <p class="pt-4 text-gray-300">{project.desc}</p>
-        <div class="links absolute bottom-1 text-sky-600 flex justify-end w-full pr-8 pb-2">[github] [live-site]</div>
+        <div class="links absolute bottom-1 text-sky-600 flex space-x-2 justify-end w-full pr-8 pb-2"><span class="hover:text-orange-200">[github]</span><span class="hover:text-orange-200">[live-site]</span></div>
     </div>
 </div>
 
