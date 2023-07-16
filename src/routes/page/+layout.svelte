@@ -89,7 +89,7 @@
                 </svg>
             </div>
             <div class="name flex flex-col w-2/3  ">
-                <div class=" bg-[#F7DEC8] border-b border-black  border-opacity-5 tracking-tight font-bold text-black text-opacity-100">Shomegie Ikerodah</div>
+                <div class=" bg-[#facfa8] border-b border-black  border-opacity-5 tracking-tight font-bold text-black text-opacity-100">Shomegie Ikerodah</div>
                 <div class=" tracking-tight text-xs text-black text-opacity-90"> Fullstack developer, frontend designer, UI/UX designer, Svelte/Sveltekit developer, Tailwind developer</div>
             </div>
         </div>

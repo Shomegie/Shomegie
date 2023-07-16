@@ -29,5 +29,5 @@
     </div>
 </div>
  -->
-<div class="h-12 border-t-4 border-[#000] w-full bg-stone-900"></div>
+<div class="h-12 border-t border-[#ccc] w-full bg-[#efbc8f]"></div>
 
