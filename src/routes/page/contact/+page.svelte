@@ -6,7 +6,7 @@
 
 <div class="w-full pt-6">
     <div class="flex flex-col w-5/6 sm:w-4/6 mx-auto ">
-        <div class="text-2xl lg:text-3xl tracking-tight w-fit bg-[#f7dec8] text-black py-1 px-2 pr-10 text-opacity-90 mb-1">Contact Me</div>
+        <div class="text-2xl lg:text-3xl tracking-tight w-fit bg-[#facfa8] text-black py-1 px-2 pr-10 text-opacity-90 mb-1">Contact Me</div>
         <div class="text-sm tracking-tight mb-6 text-black text-opacity-80">Please fill the form below to get in touch. Please provide a subject for the message as well. Thanks.</div>
         <div class="myForm w-full">
             <form class="flex flex-col w-full space-y-6" method="POST">
