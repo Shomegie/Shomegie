@@ -2,7 +2,7 @@
     import { goto } from "$app/navigation";
 
 
-    let menu =`text-black text-opacity-60 font-thin cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
+    let menu =`text-black text-opacity-60 cursor-pointer hover:text-opacity-100 transition duration-150 py-2 px-3`
 	let navOpen = true;
     //let mobile_menu_li = `text-stone-800 border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg hover:text-rose-900 cursor-pointer`
     // temp_home = 'text-white bg-black border-2 w-4/6 mx-auto border-stone-500 py-4 text-center rounded-lg cursor-pointer'
@@ -81,7 +81,7 @@
 
 <!-- desktop view -->
 
-<div hidden class="h-[100vh] bg-[#fed8b7] w-full sm:flex flex-col helv">
+<div hidden class="h-[100vh] bg-[#efbc8f] w-full sm:flex flex-col helv">
     <div class="h-[240px] bg-[#FFF] w-full flex items-center justify-center">
         <div class=" w-fit flex flex-col">
             <div class="helv text-6xl lg:text-7xl tracking-tight text-black text-opacity-80 ">Shomegie Ikerodah</div>
