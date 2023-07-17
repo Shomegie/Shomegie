@@ -29,5 +29,7 @@
     </div>
 </div>
  -->
-<div class="h-12 border-t border-[#ccc] w-full bg-[#efbc8f]"></div>
+<div class="h-12 border-t border-[#ccc] w-full bg-[#222]">
+    <div class="flex text-[#444] w-4/5 mx-auto md:justify-end items-center  h-full text-xs">github:<a target="_blank" rel="noreferrer" href="https://github.com/Shomegie">Shomegie</a></div>
+</div>
 
