@@ -29,9 +29,9 @@
 
 </script>
 <div class="w-full pt-6">
-    <div class="min-h-[50vh] flex flex-col w-5/6 sm:w-4/6 mx-auto">
+    <div class="min-h-[50vh] flex flex-col w-5/6 lg:w-4/6 mx-auto">
         <div class="text-2xl lg:text-3xl tracking-tight w-fit bg-[#facfa8] text-black py-1 px-2 pr-10 text-opacity-90 mb-1">Projects</div>
-        <div class="w-full border-b border-stone-50 mx-auto mt-4 mb-3 divider"></div>
+        <div class="w-full border-b border-stone-50 mx-auto mt-1 mb-3 divider"></div>
 
 
         <!-- <div class="w-5/6 mx-auto pb-4">
@@ -39,7 +39,7 @@
         </div> -->
 
 
-        <div class="w-full mt-2 mx-auto grid grid-cols-2 gap-8 ">
+        <div class="w-full mt-1 mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8 ">
             {#each projects as project }
                 <ProjectCard_2 {project} />
             {/each}
