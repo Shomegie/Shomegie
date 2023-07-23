@@ -90,10 +90,10 @@
     </div>
     <div class="menu pt-3">
         <ul class="flex w-4/5 md:w-4/5 lg:w-4/6 xl:w-4/6 xl:px-10 mx-auto justify-between">
-            <li on:click = {()=> goto('/')} on:keydown = {()=> goto('/')} class={menu}>Home</li>
-            <li on:click = {()=> goto('/page/about')} on:keydown = {()=> goto('/page/about')} class={menu}>About</li>
-            <li on:click = {()=> goto('/page/contact')} on:keydown = {()=> goto('/page/contact')} class={menu}>Contact</li>
-            <li on:click = {()=> goto('/page/projects')} on:keydown = {()=> goto('/page/projects')} class={menu}>Projects</li>
+            <li on:click = {()=> goto('/')} on:keyup = {()=> goto('/')} class={menu}>Home</li>
+            <li on:click = {()=> goto('/page/about')} on:keyup = {()=> goto('/page/about')} class={menu}>About</li>
+            <li on:click = {()=> goto('/page/contact')} on:keyup = {()=> goto('/page/contact')} class={menu}>Contact</li>
+            <li on:click = {()=> goto('/page/projects')} on:keyup = {()=> goto('/page/projects')} class={menu}>Projects</li>
         </ul>
     </div>
     
@@ -105,7 +105,7 @@
                 <div class="border-b border-black w-fit pr-1 border-opacity-10">fullstack web developer.</div>
             </div>
             <div class="pt-10">
-                <div class="w-fit bg-black text-white mx-auto rounded-full py-3 px-5 text-sm cursor-pointer hover:bg-blue-700 hover:text-white transition duration-200">Download Resume</div>
+                <div on:click = {()=> goto('/page/contact')} on:keyup = {()=> goto('/page/contact')}  class="w-fit bg-black text-white mx-auto rounded-full py-3 px-5 text-sm cursor-pointer hover:bg-blue-700 hover:text-white transition duration-200">Send me a message</div>
             </div>
         </div>
     </div>
