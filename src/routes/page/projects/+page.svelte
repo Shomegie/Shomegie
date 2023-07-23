@@ -7,22 +7,22 @@
             name:'Spotify Artist Top Track Preview',
             tech:'Svelte, Sveltekit, Tailwind, SpotifyAPI',
             desc:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe aspernatur recusandae a',
-            github:'link_url',
-            site:'link_url'
+            github:'https://github.com/Shomegie/Spotify2022',
+            site:'https://spotify2022.vercel.app'
         },
         {
             name:'BlackJack2022',
             tech:'Svelte, Sveltekit, Tailwind',
             desc:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe aspernatur recusandae a.',
-            github:'link_url',
-            site:'link_url'
+            github:'https://github.com/Shomegie/BlackJack2022',
+            site:'https://blackjack-shomegie.vercel.app'
         },
         {
             name:'Nithalos International School',
             tech:'Svelte, Sveltekit, Tailwind',
             desc:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe aspernatur recusandae a',
-            github:'link_url',
-            site:'link_url'
+            github:'https://github.com/Shomegie/NIS_LIVE',
+            site:'https://www.nithalos.com/'
         }
     ]
 

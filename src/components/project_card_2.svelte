@@ -18,10 +18,9 @@
             <div class="text-base lg:text-xl tracking-tight font-bold leading-4 m-0 p-0">{project.name}</div>
             <div class="text-xs lg:text-md text-blue-500 m-0 pt-1 lg:pt-0">[{project.tech}]</div>
             <p class="pt-2 lg:pt-4 text-gray-300 text-xs lg:text-base">{project.desc}</p>
-            <!-- <div class="links hidden lg:flex absolute bottom-1 text-sky-600 space-x-2 justify-end w-full pr-8 pb-2"><span class="hover:text-orange-200">[github]</span><span class="hover:text-orange-200">[live-site]</span></div> -->
         </div>
     </div>
-    <div class="bg-[#efbc8f] sm:bg-[#e7b487] h-8 w-full relative">
-        <div class="links flex absolute text-sm lg:text-base bottom-1 text-sky-700 font-bold space-x-2 justify-end w-full pr-2 lg:pr-8"><span class="hover:text-gray-800 cursor-pointer">[github]</span><span class="cursor-pointer hover:text-gray-900">[live-site]</span></div>
+    <div class="bg-[#efbc8f] sm:bg-[#e7b487] lg:bg-orange-200 h-8 w-full relative">
+        <div class="links flex absolute text-sm lg:text-base bottom-1 text-sky-700 font-bold space-x-2 justify-end w-full pr-2 lg:pr-8"><span class="hover:text-gray-800 cursor-pointer"><a href={project.github} class="" rel="noreferrer" target="_blank" >[github]</a></span><span class="cursor-pointer hover:text-gray-900"><a href={project.site} class="" rel="noreferrer" target="_blank" >[live-site]</a></span></div>
     </div>
 </div>
