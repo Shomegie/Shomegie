@@ -6,21 +6,21 @@
         {
             name:'Spotify Artist Top Track Preview',
             tech:'Svelte, Sveltekit, Tailwind, SpotifyAPI',
-            desc:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe aspernatur recusandae a',
+            desc:'Designed and implemented a mini spotify application to preview top songs of a selected artist...',
             github:'https://github.com/Shomegie/Spotify2022',
             site:'https://spotify2022.vercel.app'
         },
         {
             name:'BlackJack2022',
             tech:'Svelte, Sveltekit, Tailwind',
-            desc:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe aspernatur recusandae a.',
+            desc:'Designed and implemented a standalone blackjack game vs a computer...',
             github:'https://github.com/Shomegie/BlackJack2022',
             site:'https://blackjack-shomegie.vercel.app'
         },
         {
             name:'Nithalos International School',
             tech:'Svelte, Sveltekit, Tailwind',
-            desc:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe aspernatur recusandae a',
+            desc:'Implemented a static site for a school...',
             github:'https://github.com/Shomegie/NIS_LIVE',
             site:'https://www.nithalos.com/'
         }
