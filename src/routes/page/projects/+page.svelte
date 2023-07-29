@@ -6,14 +6,14 @@
         {
             name:'Spotify Artist Top Track Preview',
             tech:'Svelte, Sveltekit, Tailwind, SpotifyAPI',
-            desc:'Designed and implemented a mini spotify application to preview top songs of a selected artist...',
+            desc:'Designed & implemented a mini spotify application to preview top songs of a selected artist...',
             github:'https://github.com/Shomegie/Spotify2022',
             site:'https://spotify2022.vercel.app'
         },
         {
             name:'BlackJack2022',
             tech:'Svelte, Sveltekit, Tailwind',
-            desc:'Designed and implemented a standalone blackjack game vs a computer...',
+            desc:'Designed & implemented a standalone blackjack game vs a computer...',
             github:'https://github.com/Shomegie/BlackJack2022',
             site:'https://blackjack-shomegie.vercel.app'
         },
@@ -23,6 +23,13 @@
             desc:'Implemented a static site for a school...',
             github:'https://github.com/Shomegie/NIS_LIVE',
             site:'https://www.nithalos.com/'
+        },
+        {
+            name:'Portfolio Site',
+            tech:'Svelte, Sveltekit, Tailwind',
+            desc:'Designed & Implemented this very portfolio site in sveltekit',
+            github:'https://github.com/Shomegie/Shomegie',
+            site:'https://shomegie.vercel.app/'
         }
     ]
 
