@@ -23,13 +23,6 @@
             desc:'Implemented a static site for a school...',
             github:'https://github.com/Shomegie/NIS_LIVE',
             site:'https://www.nithalos.com/'
-        },
-        {
-            name:'Portfolio Site',
-            tech:'Svelte, Sveltekit, Tailwind',
-            desc:'Designed & Implemented this very portfolio site in sveltekit',
-            github:'https://github.com/Shomegie/Shomegie',
-            site:'https://shomegie.vercel.app/'
         }
     ]
 
