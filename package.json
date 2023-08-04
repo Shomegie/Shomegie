@@ -8,7 +8,7 @@
 		"preview": "vite preview",
 		"lint": "prettier --plugin-search-dir . --check .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"myhost": "vite --host"
+		"hdev": "vite --host"
 	},
 	"devDependencies": {
 		"@iconify/svelte": "^3.0.0",
