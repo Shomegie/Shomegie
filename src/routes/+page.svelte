@@ -24,7 +24,7 @@
 
 <div class="absolute sm:hidden inset-0 overflow-hidden" >
     <!-- mobile menu -->
-    <div  class="absolute inset-0 z-30 bg-[#efbc8f] w-full flex flex-col text-white transition duration-700" class:hideMenu ={navOpen} class:showMenu={!navOpen} >
+    <div  class="absolute inset-0 z-30 bg-[#efbc8f] w-full flex sm:hidden flex-col text-white transition duration-700" class:hideMenu ={navOpen} class:showMenu={!navOpen} >
         <div class="relative w-full h-full flex flex-col items-end">
             <div class="menu_trap w-1/2 absolute"></div>
 
