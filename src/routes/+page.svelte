@@ -72,7 +72,7 @@
                 <div class="">fullstack web developer.</div>
             </div>
             <div class="z-10 px-8 pt-10 ">
-                <div class="w-fit bg-black text-white mx-auto rounded-full py-3 px-5 text-sm cursor-pointer hover:bg-blue-700 hover:text-blac transition duration-200">Download Resume</div>
+                <div on:click={()=> goto('/page/contact')} on:keyup={()=> goto('/page/contact')} class="w-fit bg-black text-white mx-auto rounded-full py-3 px-5 text-sm cursor-pointer hover:bg-blue-700 hover:text-blac transition duration-200">Send me a message</div>
             </div>
         </div>
     </div>
