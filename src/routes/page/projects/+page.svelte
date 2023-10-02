@@ -1,28 +1,33 @@
 <script>
-    import ProjectCard from "../../../components/project_card.svelte";
 	import ProjectCard_2 from "../../../components/project_card_2.svelte";
 
+
     const projects = [
+        {
+            name:'Spoilers.IO',
+            tech:'Svelte, Sveltekit, Tailwind, Skeleton UI, TMDB API',
+            desc:'Designed & Implemented a site for interacting with movie and tv show details',
+            github:'https://github.com/gm-io/spoilers',
+            site:'https://spoilers-gm-io.vercel.app/',
+            icon:2
+        },
         {
             name:'Spotify Artist Top Track Preview',
             tech:'Svelte, Sveltekit, Tailwind, SpotifyAPI',
             desc:'Designed & implemented a mini spotify application to preview top songs of a selected artist...',
             github:'https://github.com/Shomegie/Spotify2022',
-            site:'https://spotify2022.vercel.app'
+            site:'https://spotify2022.vercel.app',
+            icon:1
+        
+
         },
         {
             name:'BlackJack2022',
             tech:'Svelte, Sveltekit, Tailwind',
             desc:'Designed & implemented a standalone blackjack game vs a computer...',
             github:'https://github.com/Shomegie/BlackJack2022',
-            site:'https://blackjack-shomegie.vercel.app'
-        },
-        {
-            name:'Nithalos International School',
-            tech:'Svelte, Sveltekit, Tailwind',
-            desc:'Implemented a static site for a school...',
-            github:'https://github.com/Shomegie/NIS_LIVE',
-            site:'https://www.nithalos.com/'
+            site:'https://blackjack-shomegie.vercel.app',
+            icon:0
         }
     ]
 

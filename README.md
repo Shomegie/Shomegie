@@ -43,6 +43,6 @@ One of my first sveltekit projects. It is a prototype of a traditional game of b
 <br />
 [[live-site]](https://blackjack-shomegie.vercel.app "blackjack2022") [[repo]](https://github.com/Shomegie/BlackJack2022 "Blackjack2022 repo")<br />
 
-![BlackJack2022](/static/readme/2x_blackjack_overview_2.png "blackjack2022")
+![BlackJack2022](/static/readme/2x_blackjack_overview_3.png "blackjack2022")
 
   

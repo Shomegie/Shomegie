@@ -114,7 +114,6 @@
 											<li>Data in music</li>
 											<li>Data in sports</li>
 											<li>Data visualization</li>
-											<li>Spotify API</li>
 											<li>Public Speaking</li>
 											<li>Design</li>
 									</ul>

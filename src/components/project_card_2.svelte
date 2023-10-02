@@ -8,13 +8,27 @@
     </div>
 </div> -->
 <script>
+    import Movie from "./icons/movie.svelte";
+    import Music from "./icons/music.svelte";
+    import Games from "./icons/games.svelte";
     export let project;
+ 
 </script>
 
 <div class="flex flex-col h-fit">
     <a href={project.site} class="" rel="noreferrer" target="_blank" >
         <div class="w-full h-24 md:h-32 lg:h-40 bg-gray-800 flex text-sky-400 cursor-pointer hover:bg-gray-900 transition duration-300">
-            <div class="h-full hidden sm:flex w-1/3 bg-[#555] border border-b-0 border-orange-200 border-r-0"></div>
+            <div class="h-full hidden sm:flex w-1/3 items-center justify-center bg-[#555] border border-b-0 border-orange-200 border-r-0">
+                {#if project.icon == 0}
+                    <Games />
+                {/if}
+                {#if project.icon == 1}
+                    <Music />
+                {/if}
+                {#if project.icon == 2}
+                    <Movie />
+                {/if}
+            </div>
             <div class="h-full w-full sm:w-2/3 py-2 pl-2 pr-2 -space-y-1 relative border border-orange-200 border-b-0 border-l-0">
                 <div class="text-base lg:text-xl tracking-tight font-bold leading-4 m-0 p-0">{project.name}</div>
                 <div class="text-xs lg:text-md text-blue-500 m-0 pt-1 lg:pt-0">[{project.tech}]</div>
