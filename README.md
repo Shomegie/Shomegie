@@ -25,7 +25,7 @@ Portfolio site: [shomegie.vercel.app](https://shomegie.vercel.app/ "shomegie.ver
 * BlackJack 2022 [[live-site]](https://blackjack-shomegie.vercel.app "blackjack2022") [[repo]](https://github.com/Shomegie/BlackJack2022 "Blackjack2022 repo")
 
 ### Spoilers.IO
-The Spoilers.io project is centered around Movies & TV-shows. It's currently still in development and is a work in progress. It is being built with svelte/sveltekit, tailwind and skeleton UI, with additional help getting the data via the TMDB API. This my first time working with skeleton UI in addition to my base tailwind skills for an improved user interface, design and experience.
+The Spoilers.io project is centered around Movies & TV-shows. It's currently still in development and is a work in progress. It is being built with svelte/sveltekit, tailwind, skeleton UI, and the TMDB API. This my first time working with skeleton UI in addition to my base tailwind skills for an improved user interface, design and experience.
 <br />
 [[live-site]](https://spoilers-gm-io.vercel.app "spoilers.io") [[repo]](https://github.com/gm-io/spoilers "spoilers.io repo")<br />
 
